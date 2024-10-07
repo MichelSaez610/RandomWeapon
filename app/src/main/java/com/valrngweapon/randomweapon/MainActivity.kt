@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         randomButton.setOnClickListener {
             var number = getRandomNum()
 
+//            Switch case that shows a different immage depending on the random number generated
             when (number) {
                 1 -> imageDisplay.setImageResource(R.drawable.weap_knife)
                 2 -> imageDisplay.setImageResource(R.drawable.weap_classic)
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+//    Function that returns a random number between 1 and 19.
     private fun getRandomNum(): Int {
         val rngNumber = Random.nextInt(1, 19)
         return rngNumber
